@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6c757d;
+}
+
+body {
+    font-family: "Poppins", serif;
+    color: var(--secondary-color);
+}
+
+.custom-margin {
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #F8F9FA;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px #b0b0b0;
+    /* overflow: auto; */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    gap: 10px
+}
+
+header div {
+    height: 60px;
+    width: 60px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 3rem
+}
+
+.icon i {
+    font-size: 3rem;
+    color: white;
+}
+
+.input-section {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+    color: var(--secondary-color);
+}
+
+.input-section input:focus {
+    outline: none;
+    border: none;
+}
+
+.input-section button {
+    width: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #0772e4;
+}
+
+.fa-solid {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.fa-calendar-days {
+    cursor: pointer;
+}
+
+hr {
+    color: #b0b0b0;
+    max-width: 95%;
+    margin: 0 auto;
+    border-bottom: none;
+    margin-bottom: 40px;
+}
+
+.select-section {
+    text-align: end;
+}
+
+select {
+    background-color: white;
+    border: none;
+    padding: 4px;
+    border: 1px solid #b0b0b0;
+    border-radius: 6px;
+    color: var(--secondary-color);
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+
+label {
+    font-size: 0.8rem;
+    margin-inline: 10px;
+}
+
+.tasks-box {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.tasks-box p {
+    font-size: 2rem;
+    color: #444;
+}
+
+.tasks {
+    display: flex;
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block: 15px;
+    margin: 12px;
+    justify-content: space-between;
+}
+
+.check-box {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.check-box i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+#here {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(184, 176, 176) !important;
+    cursor: default;
+}
+
+.tasks:hover {
+    background-color: #eceef0;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+.task-right {
+    gap: 20px
+}
+
+.fa-regular {
+    margin-top: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-trash-can {
+    color: red;
+}
+
+.fa-pen-to-square {
+    color: rgb(115, 177, 23);
+}
+
+.fa-trash-can:hover {
+    color: rgb(198, 7, 7);
+}
+
+.fa-pen-to-square:hover {
+    color: rgb(77, 118, 16);
+}
+
+.flex {
+    display: flex;
+}
+
+.hide {
+    display: none !important;
+}
+
+.new-task::after {
+    content: " ( Completed )";
+    color: rgb(184, 176, 176);
+    font-size: 0.75rem;
+}
+
+.input-replace {
+    border: none;
+    background-color: #F8F9FA;
+    font-family: "Poppins", serif;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    width: 100%;
+}
+
+.input-replace:focus {
+    outline: none;
+    background-color: #eceef0;
+}
+
+.input-replace:hover {
+    background-color: #eceef0;
+    transition: all 0.2s ease;
+}
